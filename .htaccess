@@ -1,0 +1,30 @@
+<IfModule mod_headers.c>
+    Header set Content-Type "application/javascript" env=JS_FILE
+    Header set Content-Type "text/css" env=CSS_FILE
+</IfModule>
+
+<FilesMatch "\.js$">
+    ForceType application/javascript
+    Header set X-Content-Type-Options "nosniff"
+</FilesMatch>
+
+<FilesMatch "\.css$">
+    ForceType text/css
+</FilesMatch>
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [L]
+
+<IfModule LiteSpeed>
+    CacheDisable public /
+    RewriteEngine On
+</IfModule>
+
+# No browser caching for testing
+<IfModule mod_headers.c>
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires 0
+</IfModule>

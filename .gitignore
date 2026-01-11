@@ -1,0 +1,37 @@
+# Ths is for the CTS_Canon/SITE repo
+# Node / dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output (Vite default)
+dist/
+dist-ssr/
+
+# Environment files (never commit secrets!)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor / OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Temporary / cache
+.vite/
+coverage/
+.eslintcache
+.cache/
+
+# Logs and temp
+*.log
+*.cpuprofile
