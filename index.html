@@ -4,66 +4,113 @@
   <meta charset="utf-8" />
   <title>CTS — Cognition Tool Set</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN (presentation only) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+            display: ['Space Grotesk', 'sans-serif'],
+          },
+          colors: {
+            background: 'hsl(0 0% 8%)',
+            foreground: 'hsl(0 0% 92%)',
+            muted: 'hsl(0 0% 60%)',
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
 
-  <header>
-    <h1>CTS — Cognition Tool Set</h1>
-    <p>Sustained Cognitive Excellence</p>
-  </header>
+<body class="bg-background text-foreground antialiased">
 
-  <main>
+  <!-- Outer layout shell (this is the React “feel”) -->
+  <main class="min-h-screen px-6 py-24">
+    <div class="mx-auto max-w-3xl space-y-20">
 
-<p class="max-w-3xl">
-  CTS is a system for sustaining long-term cognitive excellence through disciplined structure, explicit provenance, and intentional constraint. It is concerned with continuity of thought over time, not short-term optimization.
-</p>
+      <!-- Header -->
+      <header class="space-y-4">
+        <h1 class="font-display text-4xl font-semibold tracking-tight">
+          CTS — Cognition Tool Set
+        </h1>
+        <p class="text-lg text-muted">
+          Sustained Cognitive Excellence
+        </p>
+      </header>
 
+      <!-- Assertion -->
+      <section>
+        <p class="text-lg leading-relaxed">
+          CTS is a system for sustaining long-term cognitive excellence through
+          disciplined structure, explicit provenance, and intentional constraint.
+          It is concerned with continuity of thought over time, not short-term optimization.
+        </p>
+      </section>
 
-    <section>
-      <p class="max-w-3xl">
-        CTS is a system for sustaining long-term cognitive excellence through
-        disciplined structure, provenance, and intent.
-      </p>
-    </section>
+      <!-- Boundary -->
+      <section class="space-y-4">
+        <h2 class="font-display text-xl font-medium tracking-tight">
+          What CTS Is Not
+        </h2>
+        <ul class="list-disc list-inside space-y-2 text-muted">
+          <li>CTS is not a note-taking application</li>
+          <li>CTS is not a productivity hack</li>
+          <li>CTS is not a task or life-management system</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>What CTS Is NOT</h2>
-      <ul>
-        <li>It is not a note-taking application</li>
-        <li>It is not a productivity hack</li>
-        <li>It is not a task or life-management system</li>
-      </ul>
-    </section>
+      <!-- Canon -->
+      <section class="space-y-4">
+        <h2 class="font-display text-xl font-medium tracking-tight">
+          Authoritative Artifacts
+        </h2>
+        <ul class="list-disc list-inside space-y-2 text-muted">
+          <li>Architecture Canon</li>
+          <li>Charter</li>
+          <li>Metadata Schema</li>
+          <li>Governance &amp; Provenance Model</li>
+        </ul>
+        <p class="text-sm italic text-muted">
+          This page is descriptive, not authoritative.
+        </p>
+      </section>
 
-    <section>
-      <h2>Authoritative Artifacts</h2>
-      <ul>
-        <li>Architecture Canon</li>
-        <li>Charter</li>
-        <li>Metadata Schema</li>
-        <li>Governance & Provenance Model</li>
-      </ul>
-      <p><em>This page is descriptive, not authoritative.</em></p>
-    </section>
+      <!-- Scope -->
+      <section class="space-y-4">
+        <h2 class="font-display text-xl font-medium tracking-tight">
+          Out of Scope (MVAP)
+        </h2>
+        <ul class="list-disc list-inside space-y-2 text-muted">
+          <li>Product demonstrations</li>
+          <li>UI showcases, including WEN / CommandDeck</li>
+          <li>Feature-driven functionality claims</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Out of Scope (MVAP)</h2>
-      <ul>
-        <li>Product demonstrations</li>
-        <li>UI showcases, including WEN / CommandDeck</li>
-        <li>Feature-driven functionality claims</li>
-      </ul>
-    </section>
+      <!-- Signal -->
+      <section>
+        <p class="font-mono text-sm text-muted">
+          Watch this space.
+        </p>
+      </section>
 
-    <section>
-      <p><strong>Watch this space.</strong></p>
-    </section>
+      <!-- Footer (fixed syntax + stewardship) -->
+      <footer class="pt-20 text-sm text-muted">
+        CTS — canonical cognition architecture.
+      </footer>
 
+    </div>
   </main>
-
-  <<footer class="mt-16 text-sm text-muted-foreground">
-  CTS — canonical cognition architecture.
-</footer>
 
 </body>
 </html>
