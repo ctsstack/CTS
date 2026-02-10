@@ -6,7 +6,7 @@ authority: canonical
 scope: governance+protocol
 ---
 
-CTS — Cognition Tool Set 
+CTS — Cognition Tool Set  
 
 CTS (Cognition Tool Set) is the authoritative governance, protocol, and reference implementation for a local-first cognition system, where provenance, context, and intent are treated as first-class assets.
 
