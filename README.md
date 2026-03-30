@@ -1,6 +1,6 @@
 ---
 title: CTS
-created: 29-Mar-2026
+created: 30-Mar-2026
 status: private
 authority: canonical
 scope: governance+protocol
